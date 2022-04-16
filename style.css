@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg-color: #55aaaa;
+  --sec-bg-color: #c3c7cb;
+  --text-color: #040505;
+  --white-text-color: #fbfbfd;
+  --light-shadow-color: #fefefe;
+  --dark-shadow-color: #828282;
+  --blue-color: #000080;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  width: 100vw;
+  height: 100vh;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 16px;
+  position: absolute;
+}
+
+/* Main Container Style */
+.main-container {
+  /* Background, Shadows and Colors */
+  background: var(--sec-bg-color);
+  /* Box Shadow */
+  border-top: 1px solid var(--light-shadow-color);
+  border-left: 1px solid var(--light-shadow-color);
+  border-right: 1px solid var(--dark-shadow-color);
+  border-bottom: 1px solid var(--dark-shadow-color);
+  /* Placement and display */
+  max-width: 42.5rem;
+  min-width: 30rem;
+  min-height: 12.5rem;
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Text Bar Container Style */
+.text-bar {
+  font-size: 1rem;
+  color: var(--white-text-color);
+  background-color: var(--blue-color);
+  padding: 0.5rem;
+}
+
+/* Container Style */
+.content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Color Name Text */
+#color-name {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Button Style */
+.color-button {
+  text-decoration: none;
+  font-family: "DotGothic16", sans-serif;
+  /* Padding and Margin Settings */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.25rem;
+  border-top: 1px solid var(--light-shadow-color);
+  border-left: 1px solid var(--light-shadow-color);
+  border-right: 1px solid var(--dark-shadow-color);
+  border-bottom: 1px solid var(--dark-shadow-color);
+  box-shadow: var(--text-color) 1px 1px;
+  text-transform: uppercase;
+  background-color: var(--sec-bg-color);
+  color: var(--text-color);
+
+  /* Setting minimum width for button */
+  font-size: 2rem;
+  min-width: 12.5rem;
+  text-align: center;
+}
+
+.color-button span:hover {
+  border: 1px dotted var(--text-color);
+}
+
+.color-button span {
+  padding: 0 1.5rem;
+  border: 1px dotted var(--sec-bg-color);
+}
+
+.color-button:active {
+  border-bottom: 1px solid var(--light-shadow-color);
+  border-right: 1px solid var(--light-shadow-color);
+  border-left: 1px solid var(--dark-shadow-color);
+  border-top: 1px solid var(--dark-shadow-color);
+  box-shadow: var(--text-color) 0px 1px 1px 0px inset;
+  background-color: var(--light-bg-color);
+}
+
+.color-button span:active {
+  border: 1px dotted var(--text-color);
+}
