@@ -16,7 +16,7 @@ flipColor();
 // Back button error
 backButton.addEventListener("click", function (e) {
   e.preventDefault();
-  alert("Not yet ready. Wait a couple of weeks until then.");
+  alert("Get back where...? 😕");
 });
 
 console.warn(
